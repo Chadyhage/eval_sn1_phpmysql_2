@@ -1,0 +1,327 @@
+/* ===== Mise en page générale ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f9;
+    color: #222;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+a {
+    color: #1f6fd1;
+}
+
+/* ===== En-tête et menu ===== */
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 24px;
+    background: #23263f;
+}
+
+.entete a,
+.entete .pseudo {
+    margin-left: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.entete .logo {
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.entete .pseudo {
+    font-weight: bold;
+    color: #ffd166;
+}
+
+/* ===== Pied de page ===== */
+.pied {
+    padding: 30px 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+/* ===== Cartes des niveaux (accueil) ===== */
+.niveaux {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.carte {
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #dde0ea;
+    border-radius: 8px;
+}
+
+.carte h2 {
+    margin-top: 0;
+}
+
+.carte p {
+    margin: 4px 0;
+    color: #555;
+}
+
+/* ===== Boutons ===== */
+.bouton,
+button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: 1px solid #23263f;
+    border-radius: 6px;
+    background: #23263f;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bouton.secondaire {
+    background: #fff;
+    color: #23263f;
+}
+
+/* ===== Formulaires ===== */
+.formulaire {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dde0ea;
+    border-radius: 8px;
+}
+
+.formulaire h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #c5c9d6;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* ===== Messages ===== */
+.erreur,
+.succes {
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.erreur {
+    background: #fde2e4;
+    color: #a4001d;
+}
+
+.succes {
+    background: #e3f4e5;
+    color: #1e7b34;
+}
+
+/* ===== Page de jeu ===== */
+.titre-jeu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #e3effc;
+    color: #1f6fd1;
+    font-weight: bold;
+}
+
+.indice {
+    padding: 20px;
+    border-radius: 8px;
+    background: #e3effc;
+    color: #1f6fd1;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proposer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.proposer input {
+    width: 200px;
+}
+
+.resultat {
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resultat h2 {
+    margin: 0 0 10px;
+    font-size: 34px;
+}
+
+.resultat.gagne {
+    background: #e3f4e5;
+    color: #1e7b34;
+}
+
+.resultat.perdu {
+    background: #fde2e4;
+    color: #a4001d;
+}
+
+.boutons {
+    text-align: center;
+}
+
+.boutons .bouton {
+    margin: 14px 6px;
+}
+
+.essais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.essais li {
+    padding: 8px 14px;
+    background: #fff;
+    border: 1px solid #dde0ea;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.essais span {
+    font-weight: normal;
+}
+
+.plus {
+    color: #1f6fd1;
+}
+
+.moins {
+    color: #d9730d;
+}
+
+.trouve {
+    color: #1e7b34;
+}
+
+/* ===== Statistiques ===== */
+.chiffres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.chiffre {
+    flex: 1;
+    min-width: 150px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #dde0ea;
+    border-radius: 8px;
+    text-align: center;
+    color: #555;
+}
+
+.chiffre strong {
+    display: block;
+    font-size: 30px;
+    color: #23263f;
+}
+
+.note {
+    font-size: 13px;
+    color: #888;
+}
+
+/* ===== Tableaux ===== */
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 9px 12px;
+    border: 1px solid #dde0ea;
+    text-align: left;
+}
+
+th {
+    background: #23263f;
+    color: #fff;
+}
+
+td.gagne {
+    color: #1e7b34;
+    font-weight: bold;
+}
+
+td.perdu {
+    color: #a4001d;
+    font-weight: bold;
+}
+
+/* ===== Onglets du classement ===== */
+.onglets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.onglet {
+    padding: 8px 18px;
+    border-radius: 6px;
+    background: #e4e6ee;
+    color: #23263f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.onglet.actif {
+    background: #1f6fd1;
+    color: #fff;
+}
